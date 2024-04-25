@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unrealengineprojects\\balls\\intermediate\\build\\win64\\unrealeditor\\inc\\balls\\uht\\rollaballplayer.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unrealengineprojects\\balls\\intermediate\\build\\win64\\x64\\ballseditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\unrealengineprojects\\balls\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\balls\\definitions.balls.h",
+            "d:\\unrealengineprojects\\balls\\source\\balls\\game\\rollaballplayer.h",
+            "d:\\unrealengineprojects\\balls\\intermediate\\build\\win64\\unrealeditor\\inc\\balls\\uht\\rollaballplayer.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

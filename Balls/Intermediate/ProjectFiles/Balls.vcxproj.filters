@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Balls.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Balls.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\BallsEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Balls">
+      <UniqueIdentifier>{81E85C25-4BBE-3145-873E-E16BA61CFC14}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Balls\Balls.Build.cs">
+      <Filter>Source\Balls</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Balls\Balls.cpp">
+      <Filter>Source\Balls</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Balls\Balls.h">
+      <Filter>Source\Balls</Filter>
+    </ClInclude>
+    <Filter Include="Source\Balls\Game">
+      <UniqueIdentifier>{9097EAD3-A112-389D-BC14-E30741F17A34}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Balls\Game\RollaBallPlayer.cpp">
+      <Filter>Source\Balls\Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Balls\Game\RollaBallPlayer.h">
+      <Filter>Source\Balls\Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

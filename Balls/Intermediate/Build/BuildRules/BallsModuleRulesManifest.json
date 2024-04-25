@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\UnrealEngineProjects\\Balls\\Source\\Balls\\Balls.Build.cs",
+		"D:\\UnrealEngineProjects\\Balls\\Source\\Balls.Target.cs",
+		"D:\\UnrealEngineProjects\\Balls\\Source\\BallsEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}

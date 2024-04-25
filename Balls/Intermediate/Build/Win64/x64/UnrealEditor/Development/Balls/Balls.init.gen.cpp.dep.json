@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\unrealengineprojects\\balls\\intermediate\\build\\win64\\unrealeditor\\inc\\balls\\uht\\balls.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unrealengineprojects\\balls\\intermediate\\build\\win64\\x64\\ballseditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\unrealengineprojects\\balls\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\balls\\definitions.balls.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
