@@ -19,16 +19,28 @@ void ARollaBallPlayer::BeginPlay()
 }
 
 // Called every frame
-void ARollaBallPlayer::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
+//void ARollaBallPlayer::Tick(float DeltaTime)
+//{
+//	Super::Tick(DeltaTime);
+//
+//}
 
 // Called to bind functionality to input
 void ARollaBallPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void ARollaBallPlayer::MoveRight(float value)
+{
+}
+
+void ARollaBallPlayer::MoveLeft(float value)
+{
+}
+
+void ARollaBallPlayer::Jump()
+{
 }
 
