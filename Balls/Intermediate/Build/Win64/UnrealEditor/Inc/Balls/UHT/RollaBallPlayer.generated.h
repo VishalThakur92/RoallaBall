@@ -14,12 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define BALLS_RollaBallPlayer_generated_h
 
-#define FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_SPARSE_DATA
-#define FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_ACCESSORS
-#define FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Unreal_Projects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesARollaBallPlayer(); \
 	friend struct Z_Construct_UClass_ARollaBallPlayer_Statics; \
@@ -28,11 +23,11 @@ public: \
 	DECLARE_SERIALIZER(ARollaBallPlayer)
 
 
-#define FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Unreal_Projects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API ARollaBallPlayer(ARollaBallPlayer&&); \
-	NO_API ARollaBallPlayer(const ARollaBallPlayer&); \
+	ARollaBallPlayer(ARollaBallPlayer&&); \
+	ARollaBallPlayer(const ARollaBallPlayer&); \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ARollaBallPlayer); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ARollaBallPlayer); \
@@ -40,17 +35,12 @@ public: \
 	NO_API virtual ~ARollaBallPlayer();
 
 
-#define FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_14_PROLOG
-#define FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_GENERATED_BODY \
+#define FID_Unreal_Projects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_14_PROLOG
+#define FID_Unreal_Projects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_SPARSE_DATA \
-	FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_ACCESSORS \
-	FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_INCLASS_NO_PURE_DECLS \
-	FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Unreal_Projects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Projects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -58,7 +48,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> BALLS_API UClass* StaticClass<class ARollaBallPlayer>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_UnrealEngineProjects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h
+#define CURRENT_FILE_ID FID_Unreal_Projects_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

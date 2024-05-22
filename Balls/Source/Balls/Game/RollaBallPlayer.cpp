@@ -2,12 +2,29 @@
 
 
 #include "Balls/Game/RollaBallPlayer.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "Camera/CameraComponent.h"
+
 
 // Sets default values
 ARollaBallPlayer::ARollaBallPlayer()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
+
+	//Create components, Before this step they wont exist on our actor, they've only been defined
+	Mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
+	SpringArm = CreateDefaultSubobject<USpringArmComponent>("SpringArm");
+	Camera = CreateDefaultSubobject<UCameraComponent>("Camera");
+
+	//Set the root component to be our Mesh
+	RootComponent = Mesh;
+
+	//Attach the SpringArm to the Mesh, Spring will now follow the Mesh Transform
+	SpringArm->SetupAttachment(Mesh);
+
+	//Attach the Camera to the SpringArm, Camera will now follow the SpringArm trasform 
+	Camera->SetupAttachment(SpringArm);
 
 }
 
