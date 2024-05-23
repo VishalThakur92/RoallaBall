@@ -28,22 +28,6 @@
             <param name="registered">If true, return the registered external declaration.  Otherwise return the unregistered.</param>
             <returns>External declaration</returns>
         </member>
-        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtCodeGenerator.GetCrossReference(EpicGames.UHT.Types.UhtObject,System.Boolean)">
-            <summary>
-            Return the cross reference for an object
-            </summary>
-            <param name="obj">The object in question.</param>
-            <param name="registered">If true, return the registered cross reference.  Otherwise return the unregistered.</param>
-            <returns>Cross reference</returns>
-        </member>
-        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtCodeGenerator.GetCrossReference(System.Int32,System.Boolean)">
-            <summary>
-            Return the cross reference for an object
-            </summary>
-            <param name="objectIndex">The object in question.</param>
-            <param name="registered">If true, return the registered cross reference.  Otherwise return the unregistered.</param>
-            <returns>Cross reference</returns>
-        </member>
         <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtCodeGenerator.GetSortedHeaderFiles(EpicGames.UHT.Types.UhtPackage)">
             <summary>
             Return a package's sorted header file list of all header files that or referenced or have declarations.
@@ -106,59 +90,6 @@
             <param name="function">Function in question</param>
             <returns>Destination builder</returns>
         </member>
-        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGeneratorCppFileStringBuilderExtensinos.AppendPropertiesParams(System.Text.StringBuilder,EpicGames.UHT.Types.UhtStruct,System.String,System.Int32,System.String)">
-            <summary>
-            Append the parameter list and count as arguments to a structure constructor
-            </summary>
-            <param name="builder">Destination builder</param>
-            <param name="structObj">Structure in question</param>
-            <param name="staticsName">Name of the statics section for this structure</param>
-            <param name="tabs">Number of tabs to precede the line</param>
-            <param name="endl">String used to terminate a line</param>
-            <returns>Destination builder</returns>
-        </member>
-        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGeneratorCppFileStringBuilderExtensinos.AppendPropertiesParamsList(System.Text.StringBuilder,EpicGames.UHT.Types.UhtStruct,System.String,System.Int32,System.String)">
-            <summary>
-            Append the parameter list as an argument to a structure constructor
-            </summary>
-            <param name="builder">Destination builder</param>
-            <param name="structObj">Structure in question</param>
-            <param name="staticsName">Name of the statics section for this structure</param>
-            <param name="tabs">Number of tabs to precede the line</param>
-            <param name="endl">String used to terminate a line</param>
-            <returns>Destination builder</returns>
-        </member>
-        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGeneratorCppFileStringBuilderExtensinos.AppendPropertiesParamsCount(System.Text.StringBuilder,EpicGames.UHT.Types.UhtStruct,System.String,System.Int32,System.String)">
-            <summary>
-            Append the parameter count as an argument to a structure constructor
-            </summary>
-            <param name="builder">Destination builder</param>
-            <param name="structObj">Structure in question</param>
-            <param name="staticsName">Name of the statics section for this structure</param>
-            <param name="tabs">Number of tabs to precede the line</param>
-            <param name="endl">String used to terminate a line</param>
-            <returns>Destination builder</returns>
-        </member>
-        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGeneratorCppFileStringBuilderExtensinos.AppendPropertiesParamsCountStaticAssert(System.Text.StringBuilder,EpicGames.UHT.Types.UhtStruct,System.String)">
-            <summary>
-            Append static_assert to check that properties params count fit within struct
-            </summary>
-            <param name="builder">Destination builder</param>
-            <param name="structObj">Structure in question</param>
-            <param name="staticsName">Name of the statics section for this structure</param>
-            <returns>Destination builder</returns>
-        </member>
-        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGeneratorCppFileStringBuilderExtensinos.AppendArray(System.Text.StringBuilder,System.Boolean,System.Boolean,System.String,System.String)">
-            <summary>
-            Append the given array list and count as arguments to a structure constructor
-            </summary>
-            <param name="builder">Destination builder</param>
-            <param name="isEmpty">If true, the array list is empty</param>
-            <param name="allEditorOnlyData">If true, the array is all editor only data</param>
-            <param name="staticsName">Name of the statics section</param>
-            <param name="arrayName">The name of the arrray</param>
-            <returns>Destination builder</returns>
-        </member>
         <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGeneratorHFile.#ctor(EpicGames.UHT.Exporters.CodeGen.UhtCodeGenerator,EpicGames.UHT.Types.UhtPackage,EpicGames.UHT.Types.UhtHeaderFile)">
             <summary>
             Construct an instance of this generator object
@@ -200,13 +131,12 @@
             <param name="api">API text to be used</param>
             <returns>Output builder</returns>
         </member>
-        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGeneratorHFile.AppendCopyConstructorDefinition(System.Text.StringBuilder,EpicGames.UHT.Types.UhtClass,System.String)">
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGeneratorHFile.AppendCopyConstructorDefinition(System.Text.StringBuilder,EpicGames.UHT.Types.UhtClass)">
             <summary>
             Generates private copy-constructor declaration.
             </summary>
             <param name="builder">Output builder</param>
             <param name="classObj">Class being exported</param>
-            <param name="api">API text to be used</param>
             <returns>Output builder</returns>
         </member>
         <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGeneratorHFile.AppendDestructorDefinition(System.Text.StringBuilder,EpicGames.UHT.Types.UhtClass,System.String)">
@@ -294,22 +224,6 @@
             <param name="registered">If true, return the registered external declaration.  Otherwise return the unregistered.</param>
             <returns>External declaration</returns>
         </member>
-        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtPackageCodeGenerator.GetCrossReference(EpicGames.UHT.Types.UhtObject,System.Boolean)">
-            <summary>
-            Return the cross reference for an object
-            </summary>
-            <param name="obj">The object in question.</param>
-            <param name="registered">If true, return the registered cross reference.  Otherwise return the unregistered.</param>
-            <returns>Cross reference</returns>
-        </member>
-        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtPackageCodeGenerator.GetCrossReference(System.Int32,System.Boolean)">
-            <summary>
-            Return the cross reference for an object
-            </summary>
-            <param name="objectIndex">The object in question.</param>
-            <param name="registered">If true, return the registered cross reference.  Otherwise return the unregistered.</param>
-            <returns>Cross reference</returns>
-        </member>
         <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtPackageCodeGenerator.IsDelegateFunction(EpicGames.UHT.Types.UhtField)">
             <summary>
             Test to see if the given field is a delegate function
@@ -330,6 +244,23 @@
              <param name="A">Hash to merge</param>
              <param name="C">Previously combined hash</param>
              <returns>Resulting hash value</returns>
+        </member>
+        <member name="T:EpicGames.UHT.Exporters.CodeGen.UhtPackageCodeGeneratorExtensions">
+            <summary>
+            Helper formatting methods
+            </summary>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtPackageCodeGeneratorExtensions.AppendMetaDataDecl(System.Text.StringBuilder,EpicGames.UHT.Types.UhtType,EpicGames.UHT.Types.IUhtPropertyMemberContext,EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes{EpicGames.UHT.Types.UhtProperty},System.String,System.Int32)">
+            <summary>
+            Append the meta data declaration
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="type">Source type containing the meta data</param>
+            <param name="propertyContext">Context for formatting properties</param>
+            <param name="properties">Optional collection of properties to output</param>
+            <param name="name">Name</param>
+            <param name="tabs">Number of tabs to indent</param>
+            <returns>Destination builder</returns>
         </member>
         <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtPackageCodeGeneratorCppFile.#ctor(EpicGames.UHT.Exporters.CodeGen.UhtCodeGenerator,EpicGames.UHT.Types.UhtPackage)">
             <summary>
@@ -358,6 +289,305 @@
             </summary>
             <param name="factory">Requesting factory</param>
             <param name="packageSortedHeaders">Sorted list of headers by name of all headers in the package</param>
+        </member>
+        <member name="T:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1">
+            <summary>
+            Helper class for collection where types exist in different define scope blocks
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.Instances">
+            <summary>
+            Collection of instances
+            </summary>
+        </member>
+        <member name="P:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.IsEmpty">
+            <summary>
+            If true, there are no instances
+            </summary>
+        </member>
+        <member name="P:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.HasNoneScope">
+            <summary>
+            If true, at least one instance had no scope
+            </summary>
+        </member>
+        <member name="P:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.SoleScope">
+            <summary>
+            If all types share the same scope, then the sole scope is that scope.  The value will be Invalid if the
+            instances have different scopes.
+            </summary>
+        </member>
+        <member name="P:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.AllScopes">
+            <summary>
+            Collection of all scopes found in the types.  If 
+            </summary>
+        </member>
+        <member name="P:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.NoneAwareScopes">
+            <summary>
+            If any instance has no scope, then None is returned.  Otherwise AllScopes is returned.
+            </summary>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.#ctor">
+            <summary>
+            Constructor with no initial instances
+            </summary>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Constructor with initial range of types
+            </summary>
+            <param name="instances">Instances to initially add</param>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.Add(`0)">
+            <summary>
+            Add an instance to the collection
+            </summary>
+            <param name="instance">Instance to be added</param>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.AddRange(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Add a range of instances to the collection
+            </summary>
+            <param name="instances">Collection of instances</param>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.HasScope(EpicGames.UHT.Types.UhtDefineScope)">
+            <summary>
+            Check to see if the given scope has instances
+            </summary>
+            <param name="defineScope">Scope to test</param>
+            <returns>True if the scope has elements</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.OrderByDefineScope">
+            <summary>
+            Update the list to by ordered by the define scope
+            </summary>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.EnumerateDefinedScopes">
+            <summary>
+            Enumerate all of the used defined scopes
+            </summary>
+            <returns>Enumeration</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes`1.EnumerateDefinedScopesNoneAtEnd">
+            <summary>
+            Enumerate all of the used defined scopes
+            </summary>
+            <returns>Enumeration</returns>
+        </member>
+        <member name="T:EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames">
+            <summary>
+            Defines which set of names will be used for each scope
+            </summary>
+        </member>
+        <member name="F:EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames.Standard">
+            <summary>
+            Names match the define
+            </summary>
+        </member>
+        <member name="F:EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames.WithEditor">
+            <summary>
+            Use WITH_EDITOR in place of WITH_EDITORONLY_DATA
+            </summary>
+        </member>
+        <member name="T:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions">
+            <summary>
+            Helper extensions when working with defined scope collections.
+            
+            This class helps with producing consistent and correct code that works with the DefineScope element in UhtType.
+            
+            In generated header files, it supports two flavors of macro definitions used to generate the body macro.
+            
+            The multi macro style will generate one macro for each unique combination of DefineScope found.  Only the instances
+            that match the DefineScope will be placed in that macro.  The macros will be generated in such a way that they 
+            will always be present and each much be included in the generated body macro.  This style is used to generate
+            declarations as needed.
+            
+            The single macro style will generate a single macro, but that macro will appear multiple times depending on
+            each combination of the DefineScope combinations required.  Each macro will have a complete set of instances
+            filtered by the DefineScope.  This style is used to populate such things as enum definitions needed by the engine.
+            
+            In generated cpp files, there is support for enumerating through all the instances and emitting the appropriate
+            #if block to include instances based on their DefineScope.
+            </summary>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendScoped(System.Text.StringBuilder,EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames,EpicGames.UHT.Types.UhtDefineScope,System.Action{System.Text.StringBuilder})">
+            <summary>
+            Append a macro scoped macro
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="defineScopeNames">Which set of scope names will be used</param>
+            <param name="defineScope">Specified scope</param>
+            <param name="appendAction">Action to invoke to append an instance</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendScopedMacro(System.Text.StringBuilder,EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames,EpicGames.UHT.Types.UhtDefineScope,EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGenerator,EpicGames.UHT.Types.UhtType,System.String,System.Boolean,System.Action{System.Text.StringBuilder})">
+            <summary>
+            Append a macro scoped macro
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="defineScopeNames">Which set of scope names will be used</param>
+            <param name="defineScope">Specified scope</param>
+            <param name="generator">Header code generator</param>
+            <param name="outerType">Output type owning the instances</param>
+            <param name="macroSuffix">Macro being created</param>
+            <param name="includeSuffix">If true, include such things as _EOD onto the macro name</param>
+            <param name="appendAction">Action to invoke to append an instance</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendMultiMacros``1(System.Text.StringBuilder,EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes{``0},EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames,EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGenerator,EpicGames.UHT.Types.UhtType,System.String,System.Action{System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            Append multi macros for the given collection of scopes
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="instances">Defined scope instances</param>
+            <param name="defineScopeNames">Which set of scope names will be used</param>
+            <param name="generator">Header code generator</param>
+            <param name="outerType">Output type owning the instances</param>
+            <param name="macroSuffix">Macro being created</param>
+            <param name="appendAction">Action to invoke to append an instance</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendMultiMacroRefs``1(System.Text.StringBuilder,EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes{``0},EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGenerator,EpicGames.UHT.Types.UhtType,System.String)">
+            <summary>
+            Append the macro definitions requested
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="instances">Defined scope instances</param>
+            <param name="generator">Header code generator</param>
+            <param name="outerType">Output type owning the instances</param>
+            <param name="macroSuffix">Macro being created</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendSingleMacro``1(System.Text.StringBuilder,EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes{``0},EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames,EpicGames.UHT.Exporters.CodeGen.UhtHeaderCodeGenerator,EpicGames.UHT.Types.UhtType,System.String,System.Action{System.Text.StringBuilder,System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            Append a single macro, where the macro -same- definition can exist inside of define scopes where
+            the instances contained are all instances that would be satisfied by a scope.
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="instances">Defined scope instances</param>
+            <param name="defineScopeNames">Which set of scope names will be used</param>
+            <param name="generator">Header code generator</param>
+            <param name="outerType">Output type owning the instances</param>
+            <param name="macroSuffix">Macro being created</param>
+            <param name="appendAction">Action to invoke to append an instance</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendIfInstances``1(System.Text.StringBuilder,EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes{``0},EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames,System.Action{System.Text.StringBuilder})">
+            <summary>
+            Invoke the append action if any types are present.  If all types are from the same define scope, then
+            it will be wrapped with and #if block.
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="instances">Defined scope instances</param>
+            <param name="defineScopeNames">Names to use when outputting the scope</param>
+            <param name="appendAction">Action to invoke</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendInstances``1(System.Text.StringBuilder,EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes{``0},EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames,System.Action{System.Text.StringBuilder,``0})">
+            <summary>
+            Append each instance to the builder
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="instances">Defined scope instances</param>
+            <param name="defineScopeNames">Names to use when outputting the scope</param>
+            <param name="appendAction">Action to invoke</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendInstances``1(System.Text.StringBuilder,EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes{``0},EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames,System.Action{System.Text.StringBuilder},System.Action{System.Text.StringBuilder,``0},System.Action{System.Text.StringBuilder})">
+            <summary>
+            Append each instance to the builder
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="instances">Defined scope instances</param>
+            <param name="defineScopeNames">Names to use when outputting the scope</param>
+            <param name="preambleAction">Action to invoke prior to first instance</param>
+            <param name="appendAction">Action to invoke</param>
+            <param name="postambleAction">Action to invoke following all instances</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendArrayPtrAndCountLine``1(System.Text.StringBuilder,EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes{``0},EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Append the given array list and count as arguments to a structure constructor
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="instances">Collected instances</param>
+            <param name="defineScopeNames">Names to use when outputting the scope</param>
+            <param name="staticsName">Name of the statics section</param>
+            <param name="arrayName">The name of the arrray</param>
+            <param name="tabs">Number of tabs to start the line</param>
+            <param name="endl">Text to end the line</param>
+            <returns>Destination builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendArrayPtrLine``1(System.Text.StringBuilder,EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes{``0},EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Append the given array list as arguments to a structure constructor
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="instances">Collected instances</param>
+            <param name="defineScopeNames">Names to use when outputting the scope</param>
+            <param name="staticsName">Name of the statics section</param>
+            <param name="arrayName">The name of the arrray</param>
+            <param name="tabs">Number of tabs to start the line</param>
+            <param name="endl">Text to end the line</param>
+            <returns>Destination builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendArrayCountLine``1(System.Text.StringBuilder,EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopes{``0},EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Append the given array count as arguments to a structure constructor
+            </summary>
+            <param name="builder">Destination builder</param>
+            <param name="instances">Collected instances</param>
+            <param name="defineScopeNames">Names to use when outputting the scope</param>
+            <param name="staticsName">Name of the statics section</param>
+            <param name="arrayName">The name of the arrray</param>
+            <param name="tabs">Number of tabs to start the line</param>
+            <param name="endl">Text to end the line</param>
+            <returns>Destination builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendIfPreprocessor(System.Text.StringBuilder,EpicGames.UHT.Types.UhtDefineScope,EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames)">
+            <summary>
+            Start an #if block with the given scope
+            </summary>
+            <param name="builder">String builder</param>
+            <param name="defineScope">Scope</param>
+            <param name="defineScopeNames">Which set of scope names will be used</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendElsePreprocessor(System.Text.StringBuilder,EpicGames.UHT.Types.UhtDefineScope,EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames)">
+            <summary>
+            Start an #else block with the given scope
+            </summary>
+            <param name="builder">String builder</param>
+            <param name="defineScope">Scope</param>
+            <param name="defineScopeNames">Which set of scope names will be used</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendElseIfPreprocessor(System.Text.StringBuilder,EpicGames.UHT.Types.UhtDefineScope,EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames)">
+            <summary>
+            Start an #elif block with the given scope
+            </summary>
+            <param name="builder">String builder</param>
+            <param name="defineScope">Scope</param>
+            <param name="defineScopeNames">Which set of scope names will be used</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendEndIfPreprocessor(System.Text.StringBuilder,EpicGames.UHT.Types.UhtDefineScope,EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames)">
+            <summary>
+            Start an #endif block with the given scope
+            </summary>
+            <param name="builder">String builder</param>
+            <param name="defineScope">Scope</param>
+            <param name="defineScopeNames">Which set of scope names will be used</param>
+            <returns>String builder</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Exporters.CodeGen.UhtUsedDefineScopesExtensions.AppendScopeExpression(System.Text.StringBuilder,EpicGames.UHT.Types.UhtDefineScope,EpicGames.UHT.Exporters.CodeGen.UhtDefineScopeNames)">
+            <summary>
+            Append scope expression (i.e. WITH_X || WITH_Y || ...)
+            </summary>
+            <param name="builder">String builder</param>
+            <param name="defineScope">Scope</param>
+            <param name="defineScopeNames">Which set of scope names will be used</param>
+            <returns>String builder</returns>
         </member>
         <member name="T:EpicGames.UHT.Parsers.UhtClassParser">
             <summary>
@@ -459,6 +689,11 @@
         <member name="F:EpicGames.UHT.Parsers.UhtCompilerDirective.WithCoreUObject">
             <summary>
             This indicates we are in a "#if WITH_COREUOBJECT" block
+            </summary>
+        </member>
+        <member name="F:EpicGames.UHT.Parsers.UhtCompilerDirective.WithVerseVM">
+            <summary>
+            This indicates we are in a "#if WITH_VERSE_VM" block
             </summary>
         </member>
         <member name="F:EpicGames.UHT.Parsers.UhtCompilerDirective.Unrecognized">
@@ -3881,6 +4116,14 @@
             <param name="tokenDelegate">Invoked of an identifier is parsed</param>
             <returns>Token reader</returns>
         </member>
+        <member name="M:EpicGames.UHT.Tokenizer.UhtTokenReaderIdentifierExtensions.OptionalNamespace(EpicGames.UHT.Tokenizer.IUhtTokenReader,System.String)">
+            <summary>
+            Parse an optional namespace
+            </summary>
+            <param name="tokenReader">Token reader</param>
+            <param name="namespaceText">The text of the namespace</param>
+            <returns>Token reader</returns>
+        </member>
         <member name="M:EpicGames.UHT.Tokenizer.UhtTokenReaderIdentifierExtensions.RequireIdentifier(EpicGames.UHT.Tokenizer.IUhtTokenReader,System.Object)">
             <summary>
             Parse a required identifier
@@ -4352,6 +4595,9 @@
         <member name="M:EpicGames.UHT.Types.UhtArrayProperty.AppendText(System.Text.StringBuilder,EpicGames.UHT.Types.UhtPropertyTextType,System.Boolean)">
             <inheritdoc/>
         </member>
+        <member name="M:EpicGames.UHT.Types.UhtArrayProperty.AppendMetaDataDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
+            <inheritdoc/>
+        </member>
         <member name="M:EpicGames.UHT.Types.UhtArrayProperty.AppendMemberDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
             <inheritdoc/>
         </member>
@@ -4614,6 +4860,9 @@
             <param name="propertySettings">Property settings</param>
             <param name="value">Value property</param>
         </member>
+        <member name="M:EpicGames.UHT.Types.UhtContainerBaseProperty.NeedsGCBarrierWhenPassedToFunctionImpl(EpicGames.UHT.Types.UhtFunction)">
+            <inheritdoc/>
+        </member>
         <member name="M:EpicGames.UHT.Types.UhtContainerBaseProperty.Validate(EpicGames.UHT.Types.UhtStruct,EpicGames.UHT.Types.UhtProperty,EpicGames.UHT.Types.UhtValidationOptions)">
             <inheritdoc/>
         </member>
@@ -4812,6 +5061,9 @@
             <returns>True if the default value was parsed.</returns>
         </member>
         <member name="M:EpicGames.UHT.Types.UhtEnumProperty.AppendText(System.Text.StringBuilder,EpicGames.UHT.Types.UhtPropertyTextType,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtEnumProperty.AppendMetaDataDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
             <inheritdoc/>
         </member>
         <member name="M:EpicGames.UHT.Types.UhtEnumProperty.AppendMemberDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
@@ -5220,6 +5472,9 @@
         <member name="M:EpicGames.UHT.Types.UhtMapProperty.AppendText(System.Text.StringBuilder,EpicGames.UHT.Types.UhtPropertyTextType,System.Boolean)">
             <inheritdoc/>
         </member>
+        <member name="M:EpicGames.UHT.Types.UhtMapProperty.AppendMetaDataDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
+            <inheritdoc/>
+        </member>
         <member name="M:EpicGames.UHT.Types.UhtMapProperty.AppendMemberDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
             <inheritdoc/>
         </member>
@@ -5242,6 +5497,9 @@
             <inheritdoc/>
         </member>
         <member name="M:EpicGames.UHT.Types.UhtMapProperty.ValidateDeprecated">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtMapProperty.NeedsGCBarrierWhenPassedToFunctionImpl(EpicGames.UHT.Types.UhtFunction)">
             <inheritdoc/>
         </member>
         <member name="M:EpicGames.UHT.Types.UhtMapProperty.Validate(EpicGames.UHT.Types.UhtStruct,EpicGames.UHT.Types.UhtProperty,EpicGames.UHT.Types.UhtValidationOptions)">
@@ -5533,7 +5791,7 @@
         </member>
         <member name="M:EpicGames.UHT.Types.UhtObjectPropertyBase.ConditionalLogPointerUsage(EpicGames.UHT.Types.UhtPropertySettings,EpicGames.UHT.Utils.UhtIssueBehavior,EpicGames.UHT.Utils.UhtIssueBehavior,EpicGames.UHT.Utils.UhtIssueBehavior,System.String,EpicGames.UHT.Tokenizer.IUhtTokenReader,System.Int32,System.String)">
             <summary>
-            Log point usage warning/error
+            Logs message for Object pointers to convert UObject* to TObjectPtr or the reverse
             </summary>
             <param name="propertySettings">Property settings</param>
             <param name="engineBehavior">Expected behavior for engine types</param>
@@ -5544,6 +5802,9 @@
             <param name="typeStartPos">Starting character position of the type</param>
             <param name="alternativeTypeDesc">Suggested alternate declaration</param>
             <exception cref="T:EpicGames.UHT.Utils.UhtIceException">Thrown if the behavior type is unexpected</exception>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtObjectPropertyBase.NeedsGCBarrierWhenPassedToFunctionImpl(EpicGames.UHT.Types.UhtFunction)">
+            <inheritdoc/>
         </member>
         <member name="T:EpicGames.UHT.Types.UhtObjectPtrProperty">
             <summary>
@@ -5580,6 +5841,78 @@
             <inheritdoc/>
         </member>
         <member name="M:EpicGames.UHT.Types.UhtObjectPtrProperty.Validate(EpicGames.UHT.Types.UhtStruct,EpicGames.UHT.Types.UhtProperty,EpicGames.UHT.Types.UhtValidationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtObjectPtrProperty.ValidateMember(EpicGames.UHT.Types.UhtStruct,EpicGames.UHT.Types.UhtValidationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="T:EpicGames.UHT.Types.UhtOptionalProperty">
+            <summary>
+            Represents the FOptionalProperty engine type
+            </summary>
+        </member>
+        <member name="P:EpicGames.UHT.Types.UhtOptionalProperty.EngineClassName">
+            <inheritdoc/>
+        </member>
+        <member name="P:EpicGames.UHT.Types.UhtOptionalProperty.CppTypeText">
+            <inheritdoc/>
+        </member>
+        <member name="P:EpicGames.UHT.Types.UhtOptionalProperty.PGetMacroText">
+            <inheritdoc/>
+        </member>
+        <member name="P:EpicGames.UHT.Types.UhtOptionalProperty.PGetTypeArgument">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.#ctor(EpicGames.UHT.Types.UhtPropertySettings,EpicGames.UHT.Types.UhtProperty)">
+            <summary>
+            Construct a new Optional property
+            </summary>
+            <param name="propertySettings">Property settings</param>
+            <param name="value">Inner property value</param>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.ResolveSelf(EpicGames.UHT.Types.UhtResolvePhase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.CollectReferencesInternal(EpicGames.UHT.Utils.IUhtReferenceCollector,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.GetForwardDeclarations">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.EnumerateReferencedTypes">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.AppendText(System.Text.StringBuilder,EpicGames.UHT.Types.UhtPropertyTextType,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.AppendMetaDataDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.AppendMemberDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.AppendMemberDef(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.String,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.AppendMemberPtr(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.AppendObjectHashes(System.Text.StringBuilder,System.Int32,EpicGames.UHT.Types.IUhtPropertyMemberContext)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.AppendNullConstructorArg(System.Text.StringBuilder,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.SanitizeDefaultValue(EpicGames.UHT.Tokenizer.IUhtTokenReader,System.Text.StringBuilder)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.ValidateFunctionArgument(EpicGames.UHT.Types.UhtFunction,EpicGames.UHT.Types.UhtValidationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.Validate(EpicGames.UHT.Types.UhtStruct,EpicGames.UHT.Types.UhtProperty,EpicGames.UHT.Types.UhtValidationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtOptionalProperty.IsSameType(EpicGames.UHT.Types.UhtProperty)">
             <inheritdoc/>
         </member>
         <member name="T:EpicGames.UHT.Types.UhtSetProperty">
@@ -5619,6 +5952,9 @@
             <inheritdoc/>
         </member>
         <member name="M:EpicGames.UHT.Types.UhtSetProperty.AppendText(System.Text.StringBuilder,EpicGames.UHT.Types.UhtPropertyTextType,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtSetProperty.AppendMetaDataDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
             <inheritdoc/>
         </member>
         <member name="M:EpicGames.UHT.Types.UhtSetProperty.AppendMemberDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
@@ -5769,26 +6105,6 @@
         <member name="M:EpicGames.UHT.Types.UhtStrProperty.ValidateFunctionArgument(EpicGames.UHT.Types.UhtFunction,EpicGames.UHT.Types.UhtValidationOptions)">
             <inheritdoc/>
         </member>
-        <member name="T:EpicGames.UHT.Types.UhtStructTemplateWrapper">
-            <summary>
-            Extra information needed for a FStructProperty that is generated from a template wrapper struct
-            </summary>
-            <param name="TemplateSourceName">Source name of the template wrapper struct</param>
-            <param name="InnerScriptStruct">USTRUCTs referenced by the args of the template instance</param>
-        </member>
-        <member name="M:EpicGames.UHT.Types.UhtStructTemplateWrapper.#ctor(System.String,EpicGames.UHT.Types.UhtScriptStruct)">
-            <summary>
-            Extra information needed for a FStructProperty that is generated from a template wrapper struct
-            </summary>
-            <param name="TemplateSourceName">Source name of the template wrapper struct</param>
-            <param name="InnerScriptStruct">USTRUCTs referenced by the args of the template instance</param>
-        </member>
-        <member name="P:EpicGames.UHT.Types.UhtStructTemplateWrapper.TemplateSourceName">
-            <summary>Source name of the template wrapper struct</summary>
-        </member>
-        <member name="P:EpicGames.UHT.Types.UhtStructTemplateWrapper.InnerScriptStruct">
-            <summary>USTRUCTs referenced by the args of the template instance</summary>
-        </member>
         <member name="T:EpicGames.UHT.Types.UhtStructProperty">
             <summary>
             FStructProperty
@@ -5809,11 +6125,6 @@
         <member name="P:EpicGames.UHT.Types.UhtStructProperty.ScriptStruct">
             <summary>
             USTRUCT referenced by the property
-            </summary>
-        </member>
-        <member name="P:EpicGames.UHT.Types.UhtStructProperty.TemplateWrapper">
-            <summary>
-            Extra information for struct properties generated from a template wrapper struct
             </summary>
         </member>
         <member name="M:EpicGames.UHT.Types.UhtStructProperty.#ctor(EpicGames.UHT.Types.UhtPropertySettings,EpicGames.UHT.Types.UhtScriptStruct)">
@@ -5871,6 +6182,14 @@
         <member name="M:EpicGames.UHT.Types.UhtStructProperty.ContainsEditorOnlyProperties">
             <inheritdoc/>
         </member>
+        <member name="M:EpicGames.UHT.Types.UhtStructProperty.DefaultDefaultValue(EpicGames.UHT.Tokenizer.IUhtTokenReader,System.Text.StringBuilder)">
+            <summary>
+            Perform default, default value parsing
+            </summary>
+            <param name="defaultValueReader">Default value reader</param>
+            <param name="innerDefaultValue">Sanitized default value</param>
+            <returns></returns>
+        </member>
         <member name="M:EpicGames.UHT.Types.UhtStructProperty.ParseTemplateScriptStruct(EpicGames.UHT.Types.UhtPropertySettings,EpicGames.UHT.Tokenizer.IUhtTokenReader,EpicGames.UHT.Tokenizer.UhtToken)">
             <summary>
             Parse a template type
@@ -5879,6 +6198,41 @@
             <param name="tokenReader">Token reader</param>
             <param name="matchedToken">Token matched for type</param>
             <returns>Referenced class</returns>
+        </member>
+        <member name="T:EpicGames.UHT.Types.UhtTemplateStructProperty">
+            <summary>
+            FStructProperty
+            </summary>
+        </member>
+        <member name="P:EpicGames.UHT.Types.UhtTemplateStructProperty.TemplateWrapperName">
+            <summary>
+            When using the template wrapper pattern that provides a template wrapper to an existing structure that
+            can reference types, this is the name of the template.  For example, FInstancedStruct has TInstancedStruct
+            as a wrapper template.
+            </summary>
+        </member>
+        <member name="P:EpicGames.UHT.Types.UhtTemplateStructProperty.TemplateArgumentStruct">
+            <summary>
+            The structure being wrapped by the template wrapper
+            </summary>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtTemplateStructProperty.#ctor(EpicGames.UHT.Types.UhtPropertySettings,EpicGames.UHT.Types.UhtScriptStruct,System.String,EpicGames.UHT.Types.UhtScriptStruct)">
+            <summary>
+            Construct property
+            </summary>
+            <param name="propertySettings">Property settings</param>
+            <param name="scriptStruct">USTRUCT being referenced</param>
+            <param name="templateWrapperName">The name of wrapping template type</param>
+            <param name="templateArgumentStruct">The path name of the type being managed by the template</param>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtTemplateStructProperty.GetForwardDeclarations">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtTemplateStructProperty.AppendText(System.Text.StringBuilder,EpicGames.UHT.Types.UhtPropertyTextType,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtTemplateStructProperty.DefaultDefaultValue(EpicGames.UHT.Tokenizer.IUhtTokenReader,System.Text.StringBuilder)">
+            <inheritdoc/>
         </member>
         <member name="T:EpicGames.UHT.Types.UhtTextProperty">
             <summary>
@@ -6003,6 +6357,47 @@
             <inheritdoc/>
         </member>
         <member name="M:EpicGames.UHT.Types.UhtUInt64Property.IsSameType(EpicGames.UHT.Types.UhtProperty)">
+            <inheritdoc/>
+        </member>
+        <member name="T:EpicGames.UHT.Types.UhtVerseValueProperty">
+            <summary>
+            FStrProperty
+            </summary>
+        </member>
+        <member name="P:EpicGames.UHT.Types.UhtVerseValueProperty.EngineClassName">
+            <inheritdoc/>
+        </member>
+        <member name="P:EpicGames.UHT.Types.UhtVerseValueProperty.CppTypeText">
+            <inheritdoc/>
+        </member>
+        <member name="P:EpicGames.UHT.Types.UhtVerseValueProperty.PGetMacroText">
+            <inheritdoc/>
+        </member>
+        <member name="P:EpicGames.UHT.Types.UhtVerseValueProperty.PGetTypeArgument">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtVerseValueProperty.#ctor(EpicGames.UHT.Types.UhtPropertySettings)">
+            <summary>
+            Construct a new property
+            </summary>
+            <param name="propertySettings">Property settings</param>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtVerseValueProperty.AppendNullConstructorArg(System.Text.StringBuilder,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtVerseValueProperty.AppendMemberDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtVerseValueProperty.AppendMemberDef(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.String,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtVerseValueProperty.SanitizeDefaultValue(EpicGames.UHT.Tokenizer.IUhtTokenReader,System.Text.StringBuilder)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtVerseValueProperty.IsSameType(EpicGames.UHT.Types.UhtProperty)">
+            <inheritdoc/>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtVerseValueProperty.Validate(EpicGames.UHT.Types.UhtStruct,EpicGames.UHT.Types.UhtProperty,EpicGames.UHT.Types.UhtValidationOptions)">
             <inheritdoc/>
         </member>
         <member name="T:EpicGames.UHT.Types.UhtVoidProperty">
@@ -6162,11 +6557,6 @@
             <summary>
             The GENERATED_UCLASS_BODY, GENERATED_UINTERFACE_BODY, and GENERATED_IINTERFACE_BODY macros use the 
             legacy generated body.  If this flag is set, generate the legacy instead of the GENERATED_BODY macros.
-            </summary>
-        </member>
-        <member name="F:EpicGames.UHT.Types.UhtClassExportFlags.HasAutoGettersSetters">
-            <summary>
-            Class has one or more auto getters/setters
             </summary>
         </member>
         <member name="T:EpicGames.UHT.Types.UhtClassExportFlagsExtensions">
@@ -6331,7 +6721,7 @@
             Configuration section
             </summary>
         </member>
-        <member name="P:EpicGames.UHT.Types.UhtClass.EnclosingDefine">
+        <member name="P:EpicGames.UHT.Types.UhtClass.SerializerDefineScope">
             <summary>
             If needed, the #if block define for the serializer
             </summary>
@@ -6694,11 +7084,6 @@
         <member name="P:EpicGames.UHT.Types.UhtEnum.CppType">
             <summary>
             Full enumeration type.  For namespace enumerations, this includes the namespace name and the enum type name
-            </summary>
-        </member>
-        <member name="P:EpicGames.UHT.Types.UhtEnum.IsEditorOnly">
-            <summary>
-            True if the enum was declared in an WITH_EDITORONLY_DATA block
             </summary>
         </member>
         <member name="P:EpicGames.UHT.Types.UhtEnum.EnumValues">
@@ -8397,6 +8782,11 @@
             UHT specified property flags
             </summary>
         </member>
+        <member name="P:EpicGames.UHT.Types.UhtPropertySettings.DefineScope">
+            <summary>
+            #define scope of where the property exists
+            </summary>
+        </member>
         <member name="P:EpicGames.UHT.Types.UhtPropertySettings.Allocator">
             <summary>
             Allocator used for containers
@@ -8637,6 +9027,17 @@
             <param name="skipParameterName">If true, do not include the property name</param>
             <returns>Destination builder</returns>
         </member>
+        <member name="M:EpicGames.UHT.Types.UhtProperty.AppendMetaDataDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
+            <summary>
+            Append the required code to declare the properties meta data
+            </summary>
+            <param name="builder">Output builder</param>
+            <param name="context">Current context</param>
+            <param name="name">Name of the property.  This is needed in some cases where the name in the declarations doesn't match the property name.</param>
+            <param name="nameSuffix">Suffix to the property name</param>
+            <param name="tabs">Number of tabs prefix the line with</param>
+            <returns>Output builder</returns>
+        </member>
         <member name="M:EpicGames.UHT.Types.UhtProperty.AppendMemberDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
             <summary>
             Append the required code to declare the property as a member
@@ -8648,7 +9049,7 @@
             <param name="tabs">Number of tabs prefix the line with</param>
             <returns>Output builder</returns>
         </member>
-        <member name="M:EpicGames.UHT.Types.UhtProperty.AppendMemberDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32,System.String,System.Boolean)">
+        <member name="M:EpicGames.UHT.Types.UhtProperty.AppendMemberDecl(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32,System.String)">
             <summary>
             Append the required code to declare the property as a member
             </summary>
@@ -8658,7 +9059,6 @@
             <param name="nameSuffix">Suffix to the property name</param>
             <param name="tabs">Number of tabs prefix the line with</param>
             <param name="paramsStructName">Structure name</param>
-            <param name="appendMetaDataDecl">If true, add the meta data decl prior to the member decl</param>
             <returns>Output builder</returns>
         </member>
         <member name="M:EpicGames.UHT.Types.UhtProperty.AppendMemberDef(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.String,System.Int32)">
@@ -8673,7 +9073,7 @@
             <param name="tabs">Number of tabs prefix the line with</param>
             <returns>Output builder</returns>
         </member>
-        <member name="M:EpicGames.UHT.Types.UhtProperty.AppendMemberDefStart(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.String,System.Int32,System.String,System.String,System.Boolean,System.Boolean)">
+        <member name="M:EpicGames.UHT.Types.UhtProperty.AppendMemberDefStart(System.Text.StringBuilder,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.String,System.Int32,System.String,System.String,System.Boolean)">
             <summary>
             Append the required start of code to define the property as a member
             </summary>
@@ -8685,7 +9085,6 @@
             <param name="tabs">Number of tabs prefix the line with</param>
             <param name="paramsStructName">Structure name</param>
             <param name="paramsGenFlags">Structure flags</param>
-            <param name="appendMetaDataDef">If true, add the meta data def prior to the member def</param>
             <param name="appendOffset">If true, add the offset parameter</param>
             <returns>Output builder</returns>
         </member>
@@ -8871,6 +9270,18 @@
             Enumerate all reference types.  This method is used exclusively by FindNoExportStructsRecursive
             </summary>
             <returns>Type enumerator</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtProperty.NeedsGCBarrierWhenPassedToFunction(EpicGames.UHT.Types.UhtFunction)">
+            <summary>
+            Determines whether or not GC barriers need to run after passing this to a function
+            </summary>
+            <returns>True if GC barriers need to run</returns>				
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtProperty.NeedsGCBarrierWhenPassedToFunctionImpl(EpicGames.UHT.Types.UhtFunction)">
+            <summary>
+            Customization point for subclasses for NeedsGCBarrierWhenPassedToFunction
+            </summary>
+            <returns>True if GC barriers need to run</returns>		
         </member>
         <member name="M:EpicGames.UHT.Types.UhtProperty.GetNameSuffix(System.String,System.String)">
             <summary>
@@ -10140,6 +10551,68 @@
             <param name="matchFlags">Expected value of the tested flags</param>
             <returns>True if the given flags have a specific value.</returns>
         </member>
+        <member name="T:EpicGames.UHT.Types.UhtDefineScope">
+            <summary>
+            #define scope where the type was defined.  This only includes macros such as WITH_EDITOR, WITH_EDITORONLY_DATA, and WITH_VERSE_VM.
+            Not all types support the given options.
+            </summary>
+        </member>
+        <member name="F:EpicGames.UHT.Types.UhtDefineScope.Invalid">
+            <summary>
+            The scope is invalid.  Used during code generation.
+            </summary>
+        </member>
+        <member name="F:EpicGames.UHT.Types.UhtDefineScope.None">
+            <summary>
+            Exists outside of a define scope
+            </summary>
+        </member>
+        <member name="F:EpicGames.UHT.Types.UhtDefineScope.EditorOnlyData">
+            <summary>
+            Exists inside of a WITH_EDITORONLY_DATA block
+            </summary>
+        </member>
+        <member name="F:EpicGames.UHT.Types.UhtDefineScope.VerseVM">
+            <summary>
+            Exists inside of a WITH_VERSE_VM block
+            </summary>
+        </member>
+        <member name="F:EpicGames.UHT.Types.UhtDefineScope.ScopeCount">
+            <summary>
+            Number of unique scope combinations
+            </summary>
+        </member>
+        <member name="T:EpicGames.UHT.Types.UhtDefineScopeExtensions">
+            <summary>
+            Helper methods for testing flags.  These methods perform better than the generic HasFlag which hits
+            the GC and stalls.
+            </summary>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtDefineScopeExtensions.HasAnyFlags(EpicGames.UHT.Types.UhtDefineScope,EpicGames.UHT.Types.UhtDefineScope)">
+            <summary>
+            Test to see if any of the specified flags are set
+            </summary>
+            <param name="inFlags">Current flags</param>
+            <param name="testFlags">Flags to test for</param>
+            <returns>True if any of the flags are set</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtDefineScopeExtensions.HasAllFlags(EpicGames.UHT.Types.UhtDefineScope,EpicGames.UHT.Types.UhtDefineScope)">
+            <summary>
+            Test to see if all of the specified flags are set
+            </summary>
+            <param name="inFlags">Current flags</param>
+            <param name="testFlags">Flags to test for</param>
+            <returns>True if all the flags are set</returns>
+        </member>
+        <member name="M:EpicGames.UHT.Types.UhtDefineScopeExtensions.HasExactFlags(EpicGames.UHT.Types.UhtDefineScope,EpicGames.UHT.Types.UhtDefineScope,EpicGames.UHT.Types.UhtDefineScope)">
+            <summary>
+            Test to see if a specific set of flags have a specific value.
+            </summary>
+            <param name="inFlags">Current flags</param>
+            <param name="testFlags">Flags to test for</param>
+            <param name="matchFlags">Expected value of the tested flags</param>
+            <returns>True if the given flags have a specific value.</returns>
+        </member>
         <member name="T:EpicGames.UHT.Types.UhtAccessSpecifier">
             <summary>
             Access specifier for type
@@ -10304,6 +10777,11 @@
             The line number of where the definition began
             </summary>
         </member>
+        <member name="P:EpicGames.UHT.Types.UhtType.DefineScope">
+            <summary>
+            #define scope where the type was defined
+            </summary>
+        </member>
         <member name="P:EpicGames.UHT.Types.UhtType.FullName">
             <summary>
             Return a combination of the engine type name followed by the path name of the type
@@ -10351,7 +10829,7 @@
         </member>
         <member name="M:EpicGames.UHT.Types.UhtType.#ctor(EpicGames.UHT.Utils.UhtSession)">
             <summary>
-            Construct the base type information.  This constructor is used exclusively by UHTPackage which is at 
+            Construct the base type information.  This constructor is used exclusively by UhtPackage which is at 
             the root of all type hierarchies.
             </summary>
             <param name="session"></param>
@@ -12575,6 +13053,12 @@
             "UObject", there is no requirement for FInstancedStruct to be defined.  May be null.
             </summary>
         </member>
+        <member name="P:EpicGames.UHT.Utils.UhtSession.FStateTreePropertyRef">
+            <summary>
+            After headers are parsed, returns the FStateTreePropertyRef script struct.
+            There is no requirement for FStateTreePropertyRef to be defined. May be null.
+            </summary>
+        </member>
         <member name="P:EpicGames.UHT.Utils.UhtSession.ErrorCount">
             <summary>
             The number of errors
@@ -12880,6 +13364,11 @@
             </summary>
             <param name="message">Message being added</param>
         </member>
+        <member name="M:EpicGames.UHT.Utils.UhtSession.SignalError">
+            <summary>
+            Register than an error has happened
+            </summary>
+        </member>
         <member name="M:EpicGames.UHT.Utils.UhtSession.LogMessages">
             <summary>
             Log all the collected messages to the log/console.  If messages aren't being
@@ -13101,56 +13590,9 @@
             <param name="tabs">Number of tabs to indent</param>
             <returns>Destination builder</returns>
         </member>
-        <member name="M:EpicGames.UHT.Utils.UhtStringBuilderExtensions.AppendMetaDataDecl(System.Text.StringBuilder,EpicGames.UHT.Types.UhtType,System.String,System.Int32)">
-            <summary>
-            Append the meta data declaration
-            </summary>
-            <param name="builder">Destination builder</param>
-            <param name="type">Source type containing the meta data</param>
-            <param name="name">Name</param>
-            <param name="tabs">Number of tabs to indent</param>
-            <returns>Destination builder</returns>
-        </member>
         <member name="M:EpicGames.UHT.Utils.UhtStringBuilderExtensions.AppendMetaDataDecl(System.Text.StringBuilder,EpicGames.UHT.Types.UhtProperty,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
             <summary>
             Append the meta data declaration
-            </summary>
-            <param name="builder">Destination builder</param>
-            <param name="property">Source type containing the meta data</param>
-            <param name="context">Property context used to get the statics name and name prefix</param>
-            <param name="name">Name</param>
-            <param name="nameSuffix">Optional name suffix</param>
-            <param name="tabs">Number of tabs to indent</param>
-            <returns>Destination builder</returns>
-        </member>
-        <member name="M:EpicGames.UHT.Utils.UhtStringBuilderExtensions.AppendMetaDataDef(System.Text.StringBuilder,EpicGames.UHT.Types.UhtType,System.String,System.String,System.String,System.String,System.String,System.Int32)">
-            <summary>
-            Append the meta data definition.
-            </summary>
-            <param name="builder">Destination builder</param>
-            <param name="type">Source type containing the meta data</param>
-            <param name="staticsName">Optional name of the statics block which will be output in the form of "StaticsName::"</param>
-            <param name="namePrefix">Name prefix</param>
-            <param name="name">Name</param>
-            <param name="nameSuffix">Optional name suffix</param>
-            <param name="metaNameSuffix">Optional meta data name suffix</param>
-            <param name="tabs">Number of tabs to indent</param>
-            <returns>Destination builder</returns>
-        </member>
-        <member name="M:EpicGames.UHT.Utils.UhtStringBuilderExtensions.AppendMetaDataDef(System.Text.StringBuilder,EpicGames.UHT.Types.UhtType,System.String,System.String,System.Int32)">
-            <summary>
-            Append the meta data definition
-            </summary>
-            <param name="builder">Destination builder</param>
-            <param name="type">Source type containing the meta data</param>
-            <param name="staticsName">Optional name of the statics block which will be output in the form of "StaticsName::"</param>
-            <param name="name">Name</param>
-            <param name="tabs">Number of tabs to indent</param>
-            <returns>Destination builder</returns>
-        </member>
-        <member name="M:EpicGames.UHT.Utils.UhtStringBuilderExtensions.AppendMetaDataDef(System.Text.StringBuilder,EpicGames.UHT.Types.UhtProperty,EpicGames.UHT.Types.IUhtPropertyMemberContext,System.String,System.String,System.Int32)">
-            <summary>
-            Append the meta data definition
             </summary>
             <param name="builder">Destination builder</param>
             <param name="property">Source type containing the meta data</param>

@@ -55,8 +55,8 @@ public:
 private:
 
 	// Functions //
-	void MoveRight(float value);
-	void MoveLeft(float value);
+	void MoveRight(float Value);
+	void MoveForward(float Value);
 	void Jump();
 
 	int32 JumpCount = 0;

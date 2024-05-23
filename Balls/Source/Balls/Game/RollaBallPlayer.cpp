@@ -4,7 +4,7 @@
 #include "Balls/Game/RollaBallPlayer.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
-
+#include "Engine/Engine.h"
 
 // Sets default values
 ARollaBallPlayer::ARollaBallPlayer()
@@ -32,8 +32,12 @@ ARollaBallPlayer::ARollaBallPlayer()
 void ARollaBallPlayer::BeginPlay()
 {
 	Super::BeginPlay();
-	
-}
+
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("BeginPlay")));
+	}
+} 
 
 // Called every frame
 //void ARollaBallPlayer::Tick(float DeltaTime)
@@ -47,17 +51,56 @@ void ARollaBallPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("SetupPlayerInputComponent")));
+	}
+
+	//Custom Input Axis Bindings
+	InputComponent->BindAxis("MoveForward", this, &ARollaBallPlayer::MoveForward);
+	InputComponent->BindAxis("MoveRight", this, &ARollaBallPlayer::MoveRight);
+
+	//Custom Action Binding
+	InputComponent->BindAction("Jump" ,  IE_Pressed , this, &ARollaBallPlayer::Jump);
+
 }
 
-void ARollaBallPlayer::MoveRight(float value)
+void ARollaBallPlayer::MoveRight(float Value)
 {
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("MoveRight Value: %f"), Value));
+	}
+	//Get the Right Vector of the Camera as it doesnt rotate and move the player in this direction
+	//based on the input and MoveForce
+	const FVector Right = Camera->GetRightVector() * MoveForce * Value;
+
+	//Apply Right/Left force on the Mesh
+	Mesh->AddForce(Right);
 }
 
-void ARollaBallPlayer::MoveLeft(float value)
+void ARollaBallPlayer::MoveForward(float Value)
 {
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("MoveForward Value: %f"), Value));
+	}
+
+	//Get the Forward Vector of the Camera 
+	const FVector Forward = Camera->GetForwardVector() * MoveForce * Value;
+	
+	//Apply Forward/Backward force on the Mesh
+	Mesh->AddForce(Forward);
 }
+
 
 void ARollaBallPlayer::Jump()
 {
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Jump Pressed"));
+	}
+	//Apply an implulse to the Mesh in the Z-Axis
+	Mesh->AddImpulse(FVector(0, 0, JumpImpulse));
 }
 
