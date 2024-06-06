@@ -9,7 +9,7 @@
 // Sets default values
 ARollaBallPlayer::ARollaBallPlayer()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 
 	//Create components, Before this step they wont exist on our actor, they've only been defined
@@ -37,7 +37,7 @@ void ARollaBallPlayer::BeginPlay()
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("BeginPlay")));
 	}
-} 
+}
 
 // Called every frame
 //void ARollaBallPlayer::Tick(float DeltaTime)
@@ -61,7 +61,7 @@ void ARollaBallPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	InputComponent->BindAxis("MoveRight", this, &ARollaBallPlayer::MoveRight);
 
 	//Custom Action Binding
-	InputComponent->BindAction("Jump" ,  IE_Pressed , this, &ARollaBallPlayer::Jump);
+	InputComponent->BindAction("Jump", IE_Pressed, this, &ARollaBallPlayer::Jump);
 
 }
 
@@ -88,7 +88,7 @@ void ARollaBallPlayer::MoveForward(float Value)
 
 	//Get the Forward Vector of the Camera 
 	const FVector Forward = Camera->GetForwardVector() * MoveForce * Value;
-	
+
 	//Apply Forward/Backward force on the Mesh
 	Mesh->AddForce(Forward);
 }
@@ -103,4 +103,3 @@ void ARollaBallPlayer::Jump()
 	//Apply an implulse to the Mesh in the Z-Axis
 	Mesh->AddImpulse(FVector(0, 0, JumpImpulse));
 }
-

@@ -43,7 +43,7 @@ protected:
 
 
 
-public:	
+public:
 
 	//Wont need this since we are deriving all movement form input bindings
 	//Called every frame
