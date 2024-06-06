@@ -6,19 +6,115 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "Balls/Game/RollaBallPlayer.h"
+#include "../../Source/Runtime/Engine/Classes/Engine/HitResult.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeRollaBallPlayer() {}
 // Cross Module References
 	BALLS_API UClass* Z_Construct_UClass_ARollaBallPlayer();
 	BALLS_API UClass* Z_Construct_UClass_ARollaBallPlayer_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_APawn();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	UPackage* Z_Construct_UPackage__Script_Balls();
 // End Cross Module References
+	DEFINE_FUNCTION(ARollaBallPlayer::execOnHit)
+	{
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_HitComponent);
+		P_GET_OBJECT(AActor,Z_Param_OtherActor);
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp);
+		P_GET_STRUCT(FVector,Z_Param_NormalImpulse);
+		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_Hit);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnHit(Z_Param_HitComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_NormalImpulse,Z_Param_Out_Hit);
+		P_NATIVE_END;
+	}
 	void ARollaBallPlayer::StaticRegisterNativesARollaBallPlayer()
 	{
+		UClass* Class = ARollaBallPlayer::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "OnHit", &ARollaBallPlayer::execOnHit },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics
+	{
+		struct RollaBallPlayer_eventOnHit_Parms
+		{
+			UPrimitiveComponent* HitComponent;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComp;
+			FVector NormalImpulse;
+			FHitResult Hit;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_HitComponent_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_HitComponent;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_NormalImpulse;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Hit_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Hit;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_HitComponent_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_HitComponent = { "HitComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RollaBallPlayer_eventOnHit_Parms, HitComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_HitComponent_MetaData), Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_HitComponent_MetaData) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RollaBallPlayer_eventOnHit_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_OtherComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RollaBallPlayer_eventOnHit_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_OtherComp_MetaData), Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_OtherComp_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_NormalImpulse = { "NormalImpulse", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RollaBallPlayer_eventOnHit_Parms, NormalImpulse), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_Hit_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_Hit = { "Hit", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RollaBallPlayer_eventOnHit_Parms, Hit), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_Hit_MetaData), Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_Hit_MetaData) }; // 1891709922
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_HitComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_OtherActor,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_OtherComp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_NormalImpulse,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::NewProp_Hit,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Game/RollaBallPlayer.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARollaBallPlayer, nullptr, "OnHit", nullptr, nullptr, Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::PropPointers), sizeof(Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::RollaBallPlayer_eventOnHit_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C40401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::Function_MetaDataParams), Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::RollaBallPlayer_eventOnHit_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ARollaBallPlayer_OnHit()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ARollaBallPlayer_OnHit_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ARollaBallPlayer);
 	UClass* Z_Construct_UClass_ARollaBallPlayer_NoRegister()
@@ -28,6 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeRollaBallPlayer() {}
 	struct Z_Construct_UClass_ARollaBallPlayer_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -64,6 +161,10 @@ void EmptyLinkFunctionForGeneratedCodeRollaBallPlayer() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Balls,
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ARollaBallPlayer_Statics::DependentSingletons) < 16);
+	const FClassFunctionLinkInfo Z_Construct_UClass_ARollaBallPlayer_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ARollaBallPlayer_OnHit, "OnHit" }, // 3688120048
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ARollaBallPlayer_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARollaBallPlayer_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
@@ -144,11 +245,11 @@ void EmptyLinkFunctionForGeneratedCodeRollaBallPlayer() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ARollaBallPlayer_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ARollaBallPlayer_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -174,9 +275,9 @@ void EmptyLinkFunctionForGeneratedCodeRollaBallPlayer() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_visha_OneDrive_Documents_GitHub_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARollaBallPlayer, ARollaBallPlayer::StaticClass, TEXT("ARollaBallPlayer"), &Z_Registration_Info_UClass_ARollaBallPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARollaBallPlayer), 522241045U) },
+		{ Z_Construct_UClass_ARollaBallPlayer, ARollaBallPlayer::StaticClass, TEXT("ARollaBallPlayer"), &Z_Registration_Info_UClass_ARollaBallPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARollaBallPlayer), 3900131321U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_visha_OneDrive_Documents_GitHub_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_63438335(TEXT("/Script/Balls"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_visha_OneDrive_Documents_GitHub_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_1899258835(TEXT("/Script/Balls"),
 		Z_CompiledInDeferFile_FID_Users_visha_OneDrive_Documents_GitHub_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_visha_OneDrive_Documents_GitHub_RoallaBall_Balls_Source_Balls_Game_RollaBallPlayer_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -26,12 +26,23 @@ ARollaBallPlayer::ARollaBallPlayer()
 	//Attach the Camera to the SpringArm, Camera will now follow the SpringArm trasform 
 	Camera->SetupAttachment(SpringArm);
 
+
+	//Set physics to be True
+	Mesh->SetSimulatePhysics(true);
+
+
+	Mesh->OnComponentHit.AddDynamic(this, &ARollaBallPlayer::OnHit);
 }
 
 // Called when the game starts or when spawned
 void ARollaBallPlayer::BeginPlay()
 {
 	Super::BeginPlay();
+
+	//Account for mass in MoveForce
+	MoveForce *= Mesh->GetMass();
+	JumpImpulse *= Mesh->GetMass();
+
 
 	if (GEngine)
 	{
@@ -51,10 +62,10 @@ void ARollaBallPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("SetupPlayerInputComponent")));
-	}
+	//if (GEngine)
+	//{
+	//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("SetupPlayerInputComponent")));
+	//}
 
 	//Custom Input Axis Bindings
 	InputComponent->BindAxis("MoveForward", this, &ARollaBallPlayer::MoveForward);
@@ -67,10 +78,10 @@ void ARollaBallPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 void ARollaBallPlayer::MoveRight(float Value)
 {
-	if (GEngine)
+	/*if (GEngine)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("MoveRight Value: %f"), Value));
-	}
+	}*/
 	//Get the Right Vector of the Camera as it doesnt rotate and move the player in this direction
 	//based on the input and MoveForce
 	const FVector Right = Camera->GetRightVector() * MoveForce * Value;
@@ -81,10 +92,10 @@ void ARollaBallPlayer::MoveRight(float Value)
 
 void ARollaBallPlayer::MoveForward(float Value)
 {
-	if (GEngine)
+	/*if (GEngine)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("MoveForward Value: %f"), Value));
-	}
+	}*/
 
 	//Get the Forward Vector of the Camera 
 	const FVector Forward = Camera->GetForwardVector() * MoveForce * Value;
@@ -96,10 +107,29 @@ void ARollaBallPlayer::MoveForward(float Value)
 
 void ARollaBallPlayer::Jump()
 {
-	if (GEngine)
+	/*if (GEngine)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Jump Pressed"));
-	}
+	}*/
+
+	//Cap the number of jumps we can make
+	if (JumpCount >= MaxJumpCount){ return; }
+
 	//Apply an implulse to the Mesh in the Z-Axis
 	Mesh->AddImpulse(FVector(0, 0, JumpImpulse));
+
+	JumpCount++;
+}
+
+void ARollaBallPlayer::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, 
+	FVector NormalImpulse, const FHitResult& Hit)
+{
+	//Get Direction we hit the surface on the Z-axis
+	float HitDirection = Hit.Normal.Z;
+
+	//If its more than 0 then we've hit something below us, 1 is flat, anything between is a slope
+	if (HitDirection > 0) {
+		//Reset the jumpcount
+		JumpCount = 0;
+	}
 }
