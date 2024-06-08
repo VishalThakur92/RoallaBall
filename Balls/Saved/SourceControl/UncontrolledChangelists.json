@@ -6,7 +6,8 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Levels/Main.umap",
-				"C:/Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Game/BP_Player.uasset"
+				"C:/Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Game/BP_Player.uasset",
+				"C:/Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Item/BP_ItemBase.uasset"
 			]
 		}
 	]

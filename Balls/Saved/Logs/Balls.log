@@ -1118,3 +1118,322 @@ LogConfig: CVar [[r.Occlusion.SingleRHIThreadStall:1]] deferred - dummy variable
 [2024.06.08-05.48.08:510][  1]LogD3D12RHI: Cannot end block when stack is empty
 [2024.06.08-05.48.08:843][  2]LogSlate: Took 0.000083 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
 [2024.06.08-05.48.09:171][  3]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.08-05.48.31:591][218]LogViewport: Scene viewport resized to 1901x558, mode Windowed.
+[2024.06.08-05.48.31:610][219]LogViewport: Scene viewport resized to 1907x558, mode Windowed.
+[2024.06.08-05.48.31:625][220]LogViewport: Scene viewport resized to 1914x558, mode Windowed.
+[2024.06.08-05.48.31:642][221]LogViewport: Scene viewport resized to 1927x558, mode Windowed.
+[2024.06.08-05.48.31:659][222]LogViewport: Scene viewport resized to 1940x558, mode Windowed.
+[2024.06.08-05.48.31:676][223]LogViewport: Scene viewport resized to 1958x558, mode Windowed.
+[2024.06.08-05.48.31:692][224]LogViewport: Scene viewport resized to 1975x558, mode Windowed.
+[2024.06.08-05.48.31:708][225]LogViewport: Scene viewport resized to 2001x558, mode Windowed.
+[2024.06.08-05.48.31:725][226]LogViewport: Scene viewport resized to 2018x558, mode Windowed.
+[2024.06.08-05.48.31:742][227]LogViewport: Scene viewport resized to 2033x558, mode Windowed.
+[2024.06.08-05.48.31:758][228]LogViewport: Scene viewport resized to 2042x558, mode Windowed.
+[2024.06.08-05.48.31:776][229]LogViewport: Scene viewport resized to 2049x558, mode Windowed.
+[2024.06.08-05.48.31:792][230]LogViewport: Scene viewport resized to 2052x558, mode Windowed.
+[2024.06.08-05.48.34:058][366]LogViewport: Scene viewport resized to 2052x562, mode Windowed.
+[2024.06.08-05.48.34:076][367]LogViewport: Scene viewport resized to 2052x576, mode Windowed.
+[2024.06.08-05.48.34:093][368]LogViewport: Scene viewport resized to 2052x601, mode Windowed.
+[2024.06.08-05.48.34:109][369]LogViewport: Scene viewport resized to 2052x629, mode Windowed.
+[2024.06.08-05.48.34:125][370]LogViewport: Scene viewport resized to 2052x673, mode Windowed.
+[2024.06.08-05.48.34:142][371]LogViewport: Scene viewport resized to 2052x729, mode Windowed.
+[2024.06.08-05.48.34:169][372]LogViewport: Scene viewport resized to 2052x836, mode Windowed.
+[2024.06.08-05.48.34:185][373]LogViewport: Scene viewport resized to 2052x926, mode Windowed.
+[2024.06.08-05.48.34:206][374]LogViewport: Scene viewport resized to 2052x1004, mode Windowed.
+[2024.06.08-05.48.34:244][375]LogViewport: Scene viewport resized to 2052x1080, mode Windowed.
+[2024.06.08-05.48.34:290][376]LogViewport: Scene viewport resized to 2052x1101, mode Windowed.
+[2024.06.08-05.48.34:326][377]LogViewport: Scene viewport resized to 2052x1103, mode Windowed.
+[2024.06.08-05.48.34:411][382]LogViewport: Scene viewport resized to 2052x1102, mode Windowed.
+[2024.06.08-05.48.34:428][383]LogViewport: Scene viewport resized to 2052x1100, mode Windowed.
+[2024.06.08-05.48.45:462][842]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Game/BP_Player.BP_Player
+[2024.06.08-05.48.45:462][842]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.08-05.48.45:462][842]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.08-05.48.45:469][842]LogSlate: Warning: The command 'BlueprintEditorSpawnNodes.AddActorRefAction->CommandInfo' has the same default chord as 'BlueprintEditorSpawnNodes.(Class=/Script/BlueprintGraph.K2Node_Knot Key=R Shift=false Ctrl=false Alt=false)' [R]
+[2024.06.08-05.48.45:653][844]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.08-05.48.52:381][246]LogViewport: Scene viewport resized to 2052x1099, mode Windowed.
+[2024.06.08-05.48.52:415][248]LogViewport: Scene viewport resized to 2052x1094, mode Windowed.
+[2024.06.08-05.48.52:432][249]LogViewport: Scene viewport resized to 2052x1089, mode Windowed.
+[2024.06.08-05.48.52:448][250]LogViewport: Scene viewport resized to 2052x1082, mode Windowed.
+[2024.06.08-05.48.52:464][251]LogViewport: Scene viewport resized to 2052x1074, mode Windowed.
+[2024.06.08-05.48.52:481][252]LogViewport: Scene viewport resized to 2052x1069, mode Windowed.
+[2024.06.08-05.48.52:498][253]LogViewport: Scene viewport resized to 2052x1063, mode Windowed.
+[2024.06.08-05.48.52:514][254]LogViewport: Scene viewport resized to 2052x1059, mode Windowed.
+[2024.06.08-05.48.52:538][255]LogViewport: Scene viewport resized to 2052x1055, mode Windowed.
+[2024.06.08-05.48.52:554][256]LogViewport: Scene viewport resized to 2052x1052, mode Windowed.
+[2024.06.08-05.48.52:571][257]LogViewport: Scene viewport resized to 2052x1050, mode Windowed.
+[2024.06.08-05.50.03:454][509]LogDerivedDataCache: C:/Users/visha/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.036 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 637 files in 1123 folders with total size 7 MiB.
+[2024.06.08-05.55.26:664][534]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.08-05.55.26:667][534]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.08-05.55.26:669][534]PIE: New page: PIE session: Main (08-Jun-2024, 4:55:26 pm)
+[2024.06.08-05.55.26:671][534]LogOnline: OSS: Created online subsystem instance for: NULL
+[2024.06.08-05.55.26:671][534]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+[2024.06.08-05.55.26:671][534]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Main
+[2024.06.08-05.55.26:673][534]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001473s)
+[2024.06.08-05.55.26:673][534]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Main.Main to /Game/Levels/UEDPIE_0_Main.Main (0.001516s)
+[2024.06.08-05.55.26:676][534]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2024.06.08-05.55.26:677][534]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.08-05.55.26:677][534]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.08-05.55.26:677][534]LogAIModule: Creating AISystem for world Main
+[2024.06.08-05.55.26:677][534]LogPlayLevel: PIE: World Init took: (0.000778s)
+[2024.06.08-05.55.26:677][534]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2024.06.08-05.55.26:677][534]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.08-05.55.26:677][534]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.08-05.55.26:677][534]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.08-05.55.26:677][534]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.08-05.55.26:677][534]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2024.06.08-05.55.26:677][534]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.08-05.55.26:677][534]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2024.06.08-05.55.26:677][534]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.08-05.55.26:677][534]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.08-05.55.26:677][534]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.08-05.55.26:677][534]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.08-05.55.26:679][534]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.08-05.55.26:724][534]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.06.08-05.55.26:724][534]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.08-05.55.26:724][534]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.08-05.55.26:724][534]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.08-05.55.26:726][534]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=2
+[2024.06.08-05.55.26:726][534]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=2
+[2024.06.08-05.55.26:727][534]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=2
+[2024.06.08-05.55.26:727][534]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=2
+[2024.06.08-05.55.26:727][534]LogInit: FAudioDevice initialized with ID 2.
+[2024.06.08-05.55.26:727][534]LogAudio: Display: Audio Device (ID: 2) registered with world 'Main'.
+[2024.06.08-05.55.26:727][534]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 2
+[2024.06.08-05.55.26:730][534]LogLoad: Game class is 'GameModeBase'
+[2024.06.08-05.55.26:730][534]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Main.Main up for play (max tick rate 60) at 2024.06.08-11.25.26
+[2024.06.08-05.55.26:730][534]LogWorld: Bringing up level for play took: 0.000577
+[2024.06.08-05.55.26:731][534]LogOnline: OSS: Created online subsystem instance for: :Context_5
+[2024.06.08-05.55.26:736][534]PIE: Server logged in
+[2024.06.08-05.55.26:737][534]PIE: Play in editor total start time 0.069 seconds.
+[2024.06.08-05.55.31:728][830]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.08-05.55.31:728][830]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Main
+[2024.06.08-05.55.31:728][830]LogWorld: UWorld::CleanupWorld for Main, bSessionEnded=true, bCleanupResources=true
+[2024.06.08-05.55.31:729][830]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.08-05.55.31:733][830]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.08-05.55.31:736][830]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.08-05.55.31:737][830]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.08-05.55.31:737][830]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 2
+[2024.06.08-05.55.31:737][830]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2024.06.08-05.55.31:739][830]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2024.06.08-05.55.31:746][830]LogUObjectHash: Compacting FUObjectHashTables data took   0.30ms
+[2024.06.08-05.55.31:787][831]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2024.06.08-05.55.48:956][967]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Headphones (Vish Pods Pro - Find My), InstanceID=1
+[2024.06.08-05.55.48:961][967]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=19616
+[2024.06.08-05.55.49:294][968]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{844f4e27-cb3d-459e-9fde-b642aa965c7b}, Name=Headphones (Vish Pods Pro - Find My)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=105.75
+[2024.06.08-05.55.49:294][968]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2024.06.08-05.55.49:296][968]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2024.06.08-05.56.00:754][  3]LogViewport: Scene viewport resized to 2052x959, mode Windowed.
+[2024.06.08-05.56.32:827][ 99]LogViewport: Scene viewport resized to 2052x1050, mode Windowed.
+[2024.06.08-05.56.57:954][268]LogViewport: Scene viewport resized to 2052x1042, mode Windowed.
+[2024.06.08-05.56.57:970][269]LogViewport: Scene viewport resized to 2052x1022, mode Windowed.
+[2024.06.08-05.56.57:988][270]LogViewport: Scene viewport resized to 2052x993, mode Windowed.
+[2024.06.08-05.56.58:008][271]LogViewport: Scene viewport resized to 2052x937, mode Windowed.
+[2024.06.08-05.56.58:030][272]LogViewport: Scene viewport resized to 2052x889, mode Windowed.
+[2024.06.08-05.56.58:053][273]LogViewport: Scene viewport resized to 2052x852, mode Windowed.
+[2024.06.08-05.56.58:082][274]LogViewport: Scene viewport resized to 2052x834, mode Windowed.
+[2024.06.08-05.56.58:104][275]LogViewport: Scene viewport resized to 2052x831, mode Windowed.
+[2024.06.08-05.57.03:014][507]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2024.06.08-05.57.03:017][507]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2024.06.08-05.57.03:036][508]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2024.06.08-05.57.03:039][508]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2024.06.08-06.06.14:499][725]LogSlate: Took 0.002566 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2024.06.08-06.06.19:534][725]LogSlate: Window 'Pick Parent Class' being destroyed
+[2024.06.08-06.06.19:548][725]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2024.06.08-06.06.19:554][725]LogContentBrowser: Creating deferred item: NewBlueprint
+[2024.06.08-06.06.19:581][727]LogContentBrowser: Renaming the item being created (Deferred Item: NewBlueprint).
+[2024.06.08-06.06.23:784][975]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_ItemBase
+[2024.06.08-06.06.23:799][975]LogContentBrowser: End creating deferred item NewBlueprint
+[2024.06.08-06.06.49:674][138]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2024.06.08-06.06.49:675][138]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Levels/Main' took 0.004
+[2024.06.08-06.06.49:675][138]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Item/BP_ItemBase] ([2] browsable assets)...
+[2024.06.08-06.06.49:675][138]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Item/BP_ItemBase]
+[2024.06.08-06.06.49:679][138]LogPackageLocalizationCache: Processed 46 localized package path(s) for 1 prioritized culture(s) in 0.003124 seconds
+[2024.06.08-06.06.49:681][138]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Blueprints/Item/BP_ItemBase_Auto1
+[2024.06.08-06.06.49:681][138]LogSavePackage: Moving '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Saved/BP_ItemBase_Auto1BCE03D864B2168DD355786B3D8316F27.tmp' to '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Saved/Autosaves/Game/Blueprints/Item/BP_ItemBase_Auto1.uasset'
+[2024.06.08-06.06.49:681][138]LogFileHelpers: Auto-saving content packages took 0.007
+[2024.06.08-06.07.00:370][212]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase
+[2024.06.08-06.07.00:370][212]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.08-06.07.00:370][212]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.08-06.07.00:804][212]LogViewport: Scene viewport resized to 1438x1333, mode Windowed.
+[2024.06.08-06.07.09:999][757]BlueprintLog: New page: Compile BP_ItemBase
+[2024.06.08-06.07.10:024][757]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2024.06.08-06.07.26:984][ 65]LogSlate: Took 0.000262 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.06.08-06.08.28:286][799]LogStaticMesh: Display: Building static mesh SM_Cube_01...
+[2024.06.08-06.08.28:293][799]LogStaticMesh: Built static mesh [0.01s] /Engine/VREditor/BasicMeshes/SM_Cube_01.SM_Cube_01
+[2024.06.08-06.08.28:298][799]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.08-06.08.29:874][893]BlueprintLog: New page: Compile BP_ItemBase
+[2024.06.08-06.08.29:897][893]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2024.06.08-06.09.46:068][223]BlueprintLog: New page: Compile BP_ItemBase
+[2024.06.08-06.09.46:092][223]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2024.06.08-06.09.46:744][259]LogSlate: Took 0.003167 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2024.06.08-06.09.53:673][651]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2024.06.08-06.09.53:675][651]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.08-06.09.53:718][651]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.08-06.09.53:729][651]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Item/BP_ItemBase" FILE="../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Item/BP_ItemBase.uasset" SILENT=true
+[2024.06.08-06.09.53:732][651]LogSavePackage: Moving output files for package: /Game/Blueprints/Item/BP_ItemBase
+[2024.06.08-06.09.53:732][651]LogSavePackage: Moving '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Saved/BP_ItemBase3C32B3784FF50A91469F42AFFD94528F.tmp' to '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Item/BP_ItemBase.uasset'
+[2024.06.08-06.09.53:742][651]LogFileHelpers: InternalPromptForCheckoutAndSave took 67 ms
+[2024.06.08-06.09.53:742][651]AssetCheck: New page: Asset Save: BP_ItemBase
+[2024.06.08-06.09.53:742][651]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase
+[2024.06.08-06.09.54:018][668]BlueprintLog: New page: Compile BP_ItemBase
+[2024.06.08-06.09.54:028][668]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2024.06.08-06.10.05:274][205]LogUObjectHash: Compacting FUObjectHashTables data took   0.80ms
+[2024.06.08-06.10.05:277][205]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.08-06.10.05:310][205]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Item/BP_ItemBase" FILE="../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Item/BP_ItemBase.uasset" SILENT=true
+[2024.06.08-06.10.05:313][205]LogSavePackage: Moving output files for package: /Game/Blueprints/Item/BP_ItemBase
+[2024.06.08-06.10.05:313][205]LogSavePackage: Moving '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Saved/BP_ItemBase65123E914A82CF40FD86C3B83766B66B.tmp' to '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Item/BP_ItemBase.uasset'
+[2024.06.08-06.10.05:320][205]LogFileHelpers: InternalPromptForCheckoutAndSave took 42 ms (total: 109 ms)
+[2024.06.08-06.10.05:324][205]AssetCheck: New page: Asset Save: BP_ItemBase
+[2024.06.08-06.10.05:324][205]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase
+[2024.06.08-06.10.12:713][647]BlueprintLog: New page: Compile BP_ItemBase
+[2024.06.08-06.10.12:723][647]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2024.06.08-06.10.13:867][715]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2024.06.08-06.10.21:840][171]BlueprintLog: New page: Compile BP_ItemBase
+[2024.06.08-06.10.21:856][171]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2024.06.08-06.10.21:861][171]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.08-06.10.21:904][171]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Item/BP_ItemBase" FILE="../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Item/BP_ItemBase.uasset" SILENT=true
+[2024.06.08-06.10.21:906][171]LogSavePackage: Moving output files for package: /Game/Blueprints/Item/BP_ItemBase
+[2024.06.08-06.10.21:907][171]LogSavePackage: Moving '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Saved/BP_ItemBase4217ABD249BB540418DE848524BBC422.tmp' to '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Item/BP_ItemBase.uasset'
+[2024.06.08-06.10.21:914][171]LogFileHelpers: InternalPromptForCheckoutAndSave took 53 ms (total: 163 ms)
+[2024.06.08-06.10.21:917][171]AssetCheck: New page: Asset Save: BP_ItemBase
+[2024.06.08-06.10.21:917][171]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase
+[2024.06.08-06.11.08:811][406]LogSlate: Window 'BP_ItemBase' being destroyed
+[2024.06.08-06.11.16:299][851]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2024.06.08-06.11.16:303][851]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.08-06.11.16:353][851]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Item/BP_ItemBase" FILE="../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Item/BP_ItemBase.uasset" SILENT=true
+[2024.06.08-06.11.16:356][851]LogSavePackage: Moving output files for package: /Game/Blueprints/Item/BP_ItemBase
+[2024.06.08-06.11.16:356][851]LogSavePackage: Moving '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Saved/BP_ItemBase178DF94141A496BB265059A7DB9C3AE8.tmp' to '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Item/BP_ItemBase.uasset'
+[2024.06.08-06.11.16:360][851]LogFileHelpers: InternalPromptForCheckoutAndSave took 57 ms (total: 220 ms)
+[2024.06.08-06.11.16:360][851]AssetCheck: New page: Asset Save: BP_ItemBase
+[2024.06.08-06.11.16:361][851]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase
+[2024.06.08-06.11.16:831][880]BlueprintLog: New page: Compile BP_ItemBase
+[2024.06.08-06.11.16:843][880]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2024.06.08-06.11.33:800][156]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.08-06.11.33:804][156]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.08-06.11.33:805][156]PIE: New page: PIE session: Main (08-Jun-2024, 5:11:33 pm)
+[2024.06.08-06.11.33:805][156]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Main
+[2024.06.08-06.11.33:806][156]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001389s)
+[2024.06.08-06.11.33:806][156]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Main.Main to /Game/Levels/UEDPIE_0_Main.Main (0.001419s)
+[2024.06.08-06.11.33:817][156]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2024.06.08-06.11.33:818][156]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.08-06.11.33:818][156]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.08-06.11.33:819][156]LogAIModule: Creating AISystem for world Main
+[2024.06.08-06.11.33:819][156]LogPlayLevel: PIE: World Init took: (0.000919s)
+[2024.06.08-06.11.33:819][156]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2024.06.08-06.11.33:819][156]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.08-06.11.33:819][156]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.08-06.11.33:819][156]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.08-06.11.33:819][156]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.08-06.11.33:819][156]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2024.06.08-06.11.33:819][156]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.08-06.11.33:819][156]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2024.06.08-06.11.33:819][156]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.08-06.11.33:820][156]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.08-06.11.33:820][156]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.08-06.11.33:820][156]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.08-06.11.33:821][156]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.08-06.11.33:848][156]LogAudioMixer: Display: Using Audio Hardware Device Headphones (Vish Pods Pro - Find My)
+[2024.06.08-06.11.33:848][156]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.08-06.11.33:848][156]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.08-06.11.33:848][156]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.08-06.11.33:849][156]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2024.06.08-06.11.33:849][156]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=3
+[2024.06.08-06.11.33:851][156]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2024.06.08-06.11.33:851][156]LogInit: FAudioDevice initialized with ID 3.
+[2024.06.08-06.11.33:851][156]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2024.06.08-06.11.33:851][156]LogAudio: Display: Audio Device (ID: 3) registered with world 'Main'.
+[2024.06.08-06.11.33:851][156]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 3
+[2024.06.08-06.11.33:870][156]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.08-06.11.33:870][156]LogLoad: Game class is 'GameModeBase'
+[2024.06.08-06.11.33:871][156]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Main.Main up for play (max tick rate 60) at 2024.06.08-11.41.33
+[2024.06.08-06.11.33:871][156]LogWorld: Bringing up level for play took: 0.001047
+[2024.06.08-06.11.33:873][156]LogOnline: OSS: Created online subsystem instance for: :Context_9
+[2024.06.08-06.11.33:874][156]PIE: Server logged in
+[2024.06.08-06.11.33:875][156]PIE: Play in editor total start time 0.071 seconds.
+[2024.06.08-06.11.33:879][156]LogViewport: Scene viewport resized to 1280x720, mode Windowed.
+[2024.06.08-06.11.35:048][224]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.08-06.11.35:048][224]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Main
+[2024.06.08-06.11.35:048][224]LogSlate: Window 'Balls Preview [NetMode: Standalone 0]  (64-bit/PC D3D SM5)' being destroyed
+[2024.06.08-06.11.35:051][224]LogWorld: UWorld::CleanupWorld for Main, bSessionEnded=true, bCleanupResources=true
+[2024.06.08-06.11.35:051][224]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.08-06.11.35:053][224]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.08-06.11.35:055][224]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.08-06.11.35:060][224]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.06.08-06.11.35:060][224]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 3
+[2024.06.08-06.11.35:060][224]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.06.08-06.11.35:061][224]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.06.08-06.11.35:068][224]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2024.06.08-06.11.35:132][227]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2024.06.08-06.11.37:125][345]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase_C
+[2024.06.08-06.11.37:125][345]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase_C
+[2024.06.08-06.11.37:126][345]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase as actor: BP_ItemBase_C /Game/Levels/Main.Main:PersistentLevel.BP_ItemBase_C_0
+[2024.06.08-06.11.37:126][345]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase as actor: BP_ItemBase_C /Game/Levels/Main.Main:PersistentLevel.BP_ItemBase_C_0
+[2024.06.08-06.11.37:127][345]LogActorFactory: Loading ActorFactory Class /Script/Engine.LevelInstance
+[2024.06.08-06.11.37:696][379]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase_C
+[2024.06.08-06.11.37:696][379]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase_C
+[2024.06.08-06.11.37:697][379]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase as actor: BP_ItemBase_C /Game/Levels/Main.Main:PersistentLevel.BP_ItemBase_C_1
+[2024.06.08-06.11.37:697][379]LogActorFactory: Actor Factory spawned Blueprint /Game/Blueprints/Item/BP_ItemBase.BP_ItemBase as actor: BP_ItemBase_C /Game/Levels/Main.Main:PersistentLevel.BP_ItemBase_C_1
+[2024.06.08-06.11.42:295][654]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.08-06.11.42:299][654]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.08-06.11.42:299][654]PIE: New page: PIE session: Main (08-Jun-2024, 5:11:42 pm)
+[2024.06.08-06.11.42:300][654]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Main
+[2024.06.08-06.11.42:301][654]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001258s)
+[2024.06.08-06.11.42:301][654]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Main.Main to /Game/Levels/UEDPIE_0_Main.Main (0.001282s)
+[2024.06.08-06.11.42:306][654]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2024.06.08-06.11.42:307][654]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.08-06.11.42:307][654]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.08-06.11.42:307][654]LogAIModule: Creating AISystem for world Main
+[2024.06.08-06.11.42:307][654]LogPlayLevel: PIE: World Init took: (0.000698s)
+[2024.06.08-06.11.42:307][654]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2024.06.08-06.11.42:307][654]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.08-06.11.42:307][654]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.08-06.11.42:307][654]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.08-06.11.42:307][654]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.08-06.11.42:307][654]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2024.06.08-06.11.42:307][654]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.08-06.11.42:307][654]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2024.06.08-06.11.42:307][654]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.08-06.11.42:307][654]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.08-06.11.42:307][654]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.08-06.11.42:307][654]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.08-06.11.42:309][654]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.08-06.11.42:335][654]LogAudioMixer: Display: Using Audio Hardware Device Headphones (Vish Pods Pro - Find My)
+[2024.06.08-06.11.42:335][654]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.08-06.11.42:335][654]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.08-06.11.42:335][654]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.08-06.11.42:335][654]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=4
+[2024.06.08-06.11.42:335][654]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=4
+[2024.06.08-06.11.42:337][654]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=4
+[2024.06.08-06.11.42:337][654]LogInit: FAudioDevice initialized with ID 4.
+[2024.06.08-06.11.42:337][654]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=4
+[2024.06.08-06.11.42:337][654]LogAudio: Display: Audio Device (ID: 4) registered with world 'Main'.
+[2024.06.08-06.11.42:337][654]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 4
+[2024.06.08-06.11.42:340][654]LogLoad: Game class is 'GameModeBase'
+[2024.06.08-06.11.42:340][654]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Main.Main up for play (max tick rate 60) at 2024.06.08-11.41.42
+[2024.06.08-06.11.42:340][654]LogWorld: Bringing up level for play took: 0.000518
+[2024.06.08-06.11.42:341][654]LogOnline: OSS: Created online subsystem instance for: :Context_10
+[2024.06.08-06.11.42:342][654]PIE: Server logged in
+[2024.06.08-06.11.42:342][654]PIE: Play in editor total start time 0.045 seconds.
+[2024.06.08-06.11.50:100][118]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.08-06.11.50:100][118]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Main
+[2024.06.08-06.11.50:100][118]LogWorld: UWorld::CleanupWorld for Main, bSessionEnded=true, bCleanupResources=true
+[2024.06.08-06.11.50:100][118]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.08-06.11.50:107][118]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.08-06.11.50:107][118]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.08-06.11.50:112][118]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.06.08-06.11.50:113][118]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 4
+[2024.06.08-06.11.50:113][118]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.06.08-06.11.50:114][118]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.06.08-06.11.50:118][118]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.08-06.11.50:120][118]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2024.06.08-06.11.50:189][120]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2024.06.08-06.11.50:678][149]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2024.06.08-06.11.50:681][149]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.08-06.11.50:704][149]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Main" FILE="../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Levels/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2024.06.08-06.11.50:721][149]LogUObjectHash: Compacting FUObjectHashTables data took   0.32ms
+[2024.06.08-06.11.50:727][149]LogSavePackage: Moving output files for package: /Game/Levels/Main
+[2024.06.08-06.11.50:727][149]LogSavePackage: Moving '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Saved/Main0079960644DDE3D072110E92CECDFC6F.tmp' to '../../../../../../Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Levels/Main.umap'
+[2024.06.08-06.11.50:733][149]LogFileHelpers: Saving map 'Main' took 0.029
+[2024.06.08-06.11.50:742][149]LogFileHelpers: InternalPromptForCheckoutAndSave took 60 ms (total: 281 ms)
+[2024.06.08-06.11.50:743][149]AssetCheck: New page: Asset Save: Main
+[2024.06.08-06.11.50:743][149]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/Main.Main
