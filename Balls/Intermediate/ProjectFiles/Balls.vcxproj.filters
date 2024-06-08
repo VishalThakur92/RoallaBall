@@ -11,21 +11,6 @@
     <None Include="..\..\Source\BallsEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
-    <Filter Include="Config">
-      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultInput.ini">
-      <Filter>Config</Filter>
-    </None>
     <Filter Include="Source\Balls">
       <UniqueIdentifier>{81E85C25-4BBE-3145-873E-E16BA61CFC14}</UniqueIdentifier>
     </Filter>
@@ -46,6 +31,15 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\Balls\Game\RollaBallPlayer.h">
       <Filter>Source\Balls\Game</Filter>
+    </ClInclude>
+    <Filter Include="Source\Balls\Items">
+      <UniqueIdentifier>{221B7A9E-A587-336F-B225-1979B3C1D0ED}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Balls\Items\RollaBallItemBase.cpp">
+      <Filter>Source\Balls\Items</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Balls\Items\RollaBallItemBase.h">
+      <Filter>Source\Balls\Items</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
