@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BallsModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd1f924ae849c8c98d73e4003a0926973d2fe22b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57102563dbfee383ba7e56a84d677209507eb35d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BallsModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BallsModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

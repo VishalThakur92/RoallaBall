@@ -109,6 +109,10 @@
     <None Include="..\..\Balls.uproject"/>
     <None Include="..\..\Source\Balls.Target.cs"/>
     <None Include="..\..\Source\BallsEditor.Target.cs"/>
+    <None Include="..\..\.editorconfig"/>
+    <None Include="..\..\.vsconfig"/>
+    <None Include="..\..\Config\DefaultEngine.ini"/>
+    <None Include="..\..\Config\DefaultInput.ini"/>
     <None Include="..\..\Source\Balls\Balls.Build.cs"/>
     <ClCompile Include="..\..\Source\Balls\Balls.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -116,6 +120,12 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\Balls\Balls.h"/>
+    <ClCompile Include="..\..\Source\Balls\Game\BallsGameModeBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Balls\Game\BallsGameModeBase.h"/>
     <ClCompile Include="..\..\Source\Balls\Game\RollaBallPlayer.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>

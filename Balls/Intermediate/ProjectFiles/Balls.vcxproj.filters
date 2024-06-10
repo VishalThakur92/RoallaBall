@@ -11,6 +11,17 @@
     <None Include="..\..\Source\BallsEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.editorconfig" />
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\Balls">
       <UniqueIdentifier>{81E85C25-4BBE-3145-873E-E16BA61CFC14}</UniqueIdentifier>
     </Filter>
@@ -26,6 +37,12 @@
     <Filter Include="Source\Balls\Game">
       <UniqueIdentifier>{9097EAD3-A112-389D-BC14-E30741F17A34}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Balls\Game\BallsGameModeBase.cpp">
+      <Filter>Source\Balls\Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Balls\Game\BallsGameModeBase.h">
+      <Filter>Source\Balls\Game</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Balls\Game\RollaBallPlayer.cpp">
       <Filter>Source\Balls\Game</Filter>
     </ClCompile>
