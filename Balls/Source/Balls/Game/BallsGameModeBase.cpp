@@ -28,18 +28,6 @@ void ABallsGameModeBase::BeginPlay()
             GameWidget->AddToViewport();
             UpdateItemtext();
 
-
-            if (GEngine)
-            {
-                GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("WidgetBP addedd Successfully!!")));
-            }
-        }
-        else {
-
-            if (GEngine)
-            {
-            	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Unable to Add WidgetBP")));
-            }
         }
     }
 }
@@ -53,4 +41,11 @@ void ABallsGameModeBase::ItemCollected()
 {
     //increment the items collected count
     ItemsCollected++;
+
+    UpdateItemtext();
+
+    if (GEngine)
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Item Collected")));
+    }
 }
