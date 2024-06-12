@@ -39,15 +39,20 @@ void ARollaBallPlayer::BeginPlay()
 {
 	Super::BeginPlay();
 
+    if (GEngine)
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Rollaball Player beginPlay!!")));
+    }
+
 	//Account for mass in MoveForce
 	MoveForce *= Mesh->GetMass();
 	JumpImpulse *= Mesh->GetMass();
 
 
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("BeginPlay")));
-	}
+	//if (GEngine)
+	//{
+	//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("BeginPlay")));
+	//}
 }
 
 // Called every frame

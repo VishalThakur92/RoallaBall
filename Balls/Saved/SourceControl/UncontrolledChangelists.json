@@ -8,7 +8,9 @@
 				"C:/Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Levels/Main.umap",
 				"C:/Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Game/BP_Player.uasset",
 				"C:/Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Item/BP_ItemBase.uasset",
-				"C:/Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Game/BP_BallsGameModeBase.uasset"
+				"C:/Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Game/BP_BallsGameModeBase.uasset",
+				"C:/Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Game/BP_RollaBallWidget.uasset",
+				"C:/Users/visha/OneDrive/Documents/GitHub/RoallaBall/Balls/Content/Blueprints/Game/WBP_RollaBallWidget.uasset"
 			]
 		}
 	]

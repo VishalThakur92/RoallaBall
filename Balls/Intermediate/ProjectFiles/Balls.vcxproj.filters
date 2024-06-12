@@ -49,6 +49,12 @@
     <ClInclude Include="..\..\Source\Balls\Game\RollaBallPlayer.h">
       <Filter>Source\Balls\Game</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Balls\Game\RollaBallWidget.cpp">
+      <Filter>Source\Balls\Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Balls\Game\RollaBallWidget.h">
+      <Filter>Source\Balls\Game</Filter>
+    </ClInclude>
     <Filter Include="Source\Balls\Items">
       <UniqueIdentifier>{221B7A9E-A587-336F-B225-1979B3C1D0ED}</UniqueIdentifier>
     </Filter>

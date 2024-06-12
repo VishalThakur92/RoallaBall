@@ -6,6 +6,8 @@
 #include "GameFramework/GameModeBase.h"
 #include "BallsGameModeBase.generated.h"
 
+class URollaBallWidget;
+
 /**
  * 
  */
@@ -19,7 +21,16 @@ protected:
     int32 ItemsCollected = 0;
     int32 ItemsInLevel = 0;
 
-    //TODO - Implement Widget variables
+
+    UPROPERTY(EditAnywhere, Category = "Widgets")
+    TSubclassOf<class UUserWidget> GameWidgetClass;
+
+
+    UPROPERTY()
+    URollaBallWidget* GameWidget;
+
+
+
     virtual void BeginPlay() override;
 
     void UpdateItemtext();

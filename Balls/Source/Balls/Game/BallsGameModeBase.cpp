@@ -4,9 +4,13 @@
 #include "BallsGameModeBase.h"
 #include "Kismet/GameplayStatics.h"
 #include "Balls/Items/RollaBallItemBase.h"
+#include "Blueprint/UserWidget.h"
+#include "RollaBallWidget.h"
 
 void ABallsGameModeBase::BeginPlay()
 {
+    Super::BeginPlay();
+
     //Array of Type T , here array of type Actor
     TArray<AActor*> Items;
 
@@ -15,10 +19,34 @@ void ABallsGameModeBase::BeginPlay()
 
     //Get count of total RollaBallItemBase in level
     ItemsInLevel = Items.Num();
+
+
+    if (GameWidgetClass) {
+        GameWidget = Cast<URollaBallWidget>(CreateWidget(GetWorld(), GameWidgetClass));
+
+        if (GameWidget) {
+            GameWidget->AddToViewport();
+            UpdateItemtext();
+
+
+            if (GEngine)
+            {
+                GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("WidgetBP addedd Successfully!!")));
+            }
+        }
+        else {
+
+            if (GEngine)
+            {
+            	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Unable to Add WidgetBP")));
+            }
+        }
+    }
 }
 
 void ABallsGameModeBase::UpdateItemtext()
 {
+    GameWidget->SetItemText(ItemsCollected, ItemsInLevel);
 }
 
 void ABallsGameModeBase::ItemCollected()
