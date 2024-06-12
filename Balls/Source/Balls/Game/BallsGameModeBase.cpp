@@ -42,10 +42,6 @@ void ABallsGameModeBase::ItemCollected()
     //increment the items collected count
     ItemsCollected++;
 
+    //Update text as ItemsCollected has been changed
     UpdateItemtext();
-
-    if (GEngine)
-    {
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Item Collected")));
-    }
 }
